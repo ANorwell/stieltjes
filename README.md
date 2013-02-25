@@ -28,4 +28,3 @@ About
 -----
 
 Author: Arron Norwell
-License: Apache 2.0
