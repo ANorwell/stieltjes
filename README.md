@@ -1,4 +1,5 @@
-** Stieltjes **
+Stieltjes
+=========
 
 Stieltjies is a minimal, UDP-only, [Netty](http://netty.io)-based Scala client for [Riemann](http://riemann.io).
 
@@ -16,13 +17,15 @@ Events are immutable can be used as templates for other events:
     ...
     client.write(defaultEvent(State("critical"), Metric(1000L), Description("critical error")))
 
-*** Caveats ***
+Caveats
+-------
 
 Because Stieltjes uses UDP, event delivery is not guaranteed. This should be used for high-volume stats tracking, rather than error reporting.
 
 Because events are sent as fire-and-forget UDP packets, there is no mechanism for detecting if the Riemann server is down.
 
-*** About ***
+About
+-----
 
 Author: Arron Norwell
 License: Apache 2.0
