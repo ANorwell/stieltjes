@@ -50,5 +50,5 @@ case class Event(eventParts: EventPart*) {
     Proto.Msg.newBuilder.addEvents(b.build).build.toByteArray
   }
 
-  val time = System.currentTimeMillis
+  val time = System.currentTimeMillis / 1000
 }

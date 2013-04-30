@@ -4,7 +4,7 @@ organization := "com.anorwell"
 
 version := "0.1.0"
 
-scalaVersion := "2.10.0"
+scalaVersion := "2.10.1"
 
 scalacOptions ++= Seq("-unchecked", "-deprecation")
 
